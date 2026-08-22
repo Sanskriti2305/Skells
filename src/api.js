@@ -416,16 +416,30 @@ export async function speakAnswer({
       ]
     );
 
-  const audio =
-    result?.data?.[0];
+  const audio = result?.data?.[0];
 
-  if (!audio) {
-    throw new Error(
-      "TTS returned no audio."
-    );
-  }
+if (!audio) {
+  throw new Error("TTS returned no audio.");
+}
 
+// Gradio may return a FileData object instead of a plain URL.
+if (typeof audio === "string") {
   return audio;
+}
+
+if (audio.url) {
+  return audio.url;
+}
+
+if (audio.path) {
+  return audio.path;
+}
+
+if (audio.data) {
+  return audio.data;
+}
+
+throw new Error("TTS returned an invalid audio file.");
 }
 
 
