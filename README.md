@@ -8,7 +8,7 @@ The system combines **semantic retrieval, multilingual speech processing, transl
 
 ### 🚀 Live Demo
 
-**[Try SKELLS Live →](https://skells-chi.vercel.app/)**
+**[Try SKELLS Live →](https://skells.vercel.app/)**
 
 ---
 
