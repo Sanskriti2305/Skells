@@ -11,7 +11,7 @@ import {
 import {
   STRATEGY_COMPARISON,
   GUARDRAIL_EXAMPLES,
-} from "../data/appconfig";
+} from "../data/appConfig";
 
 import PipelineAnimation from "./PipelineAnimation";
 
