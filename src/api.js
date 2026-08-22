@@ -41,6 +41,7 @@ const LANGUAGE_MAP = {
   pan_Guru: "Punjabi",
   san_Deva: "Sanskrit",
   tam_Taml: "Tamil",
+  eng_Latn: "English",
 };
 
 
